@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    padding-top: 40px;
+    padding-bottom: 33px;
+}
+
+.logo_text__begin {
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.logo_text__end {
+    color: #F25822;
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: -4px;
+}
+
+.header_link__home {
+    color: #F25822;
+    font-family: "Gilroy-SemiBold";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.header_link {
+    color: #000;
+    font-family: "Gilroy-Medium";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.top {
+    padding-top: 63px;
+    padding-bottom: 32px;
+}
+
+.top_contetn__text__h3 {
+    margin-bottom: 17px;
+}
+
+.top_contetn__text__p {
+    margin-bottom: 37px;
+}
+
+.top_content__button__start {
+    padding: 15px 30px;
+    border-radius: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+}
+
+.up_logoset {
+    padding-top: 97px;
+    padding-bottom: 97px;
+}
