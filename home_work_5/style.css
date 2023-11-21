@@ -1,0 +1,184 @@
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url("/home_work_5/fonts/GilroySemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Gilroy-Regular";
+    src: url("./fonts/GilroyRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.center {
+    padding-right: calc(50% -600px);
+    padding-left: calc(50% -600px);
+    background: #FAFAFA;
+}
+
+.marketing_offers {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    gap: 30px;
+    background: #FFF;
+}
+
+.marceting_card {
+    display: flex;
+    flex-direction: column;
+}
+
+.marceting_card__with__shadow {
+    background: #FFF;
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
+
+.icon_marketing__offers__card {
+    width: 70px;
+    height: 70px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    margin-left: 30px;
+}
+
+.links_marketing__offers__card {
+    text-decoration: none;
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    padding-left: 30px;
+    padding-bottom: 25px;
+}
+
+.titles_marketing__offers__card {
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    padding-left: 30px;
+}
+
+.text_marketing__offers__card {
+    color: #666;
+    font-family: Gilroy-Regular;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    width: 310px;
+    height: 42px;
+    padding-top: 17;
+    padding-bottom: 25px;
+    padding-left: 30px;
+
+}
+
+
+
+.advantages {
+    padding-top: 92px;
+
+}
+
+.advantages_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 19px;
+
+}
+
+.advantages_title {
+    align-items: center;
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+}
+
+.advantages_text {
+    color: #666;
+    text-align: center;
+    font-family: Gilroy-Regular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    width: 682px;
+    margin: 0, auto;
+    padding-bottom: 50px;
+}
+
+
+.advantages_cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 100px;
+}
+
+.advantage_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: #FFF;
+}
+
+.advantage_card__with__shadow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.10);
+    background: #FFF;
+}
+
+.title_advantage__card {
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 22px;
+}
+
+.text_advantage__card {
+    color: #AAA;
+    text-align: center;
+    font-family: Gilroy-Regular;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    width: 310px;
+    padding-bottom: 39px;
+}
+
+.button_advantage__card {
+    padding: 15px 30px;
+    border-radius: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    border: none;
+    width: 150px;
+    height: 50px;
+}
