@@ -21,7 +21,7 @@
 .center {
     padding-right: calc(50% -600px);
     padding-left: calc(50% -600px);
-    background: #FAFAFA;
+
 }
 
 .marketing_offers {
@@ -30,7 +30,7 @@
     padding-top: 100px;
     padding-bottom: 100px;
     gap: 30px;
-    background: #FFF;
+    background: #FAFAFA;
 }
 
 .marceting_card {
