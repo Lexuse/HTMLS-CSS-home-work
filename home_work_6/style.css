@@ -26,7 +26,7 @@
 
 .header_left {
     display: flex;
-    gap: 30px;
+    gap: 41px;
     align-items: center;
 
 }
@@ -86,7 +86,8 @@
 
 .offer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: 260px 180px;
     gap: 30px;
     padding-top: 64px;
     padding-bottom: 96px;
@@ -94,6 +95,20 @@
 
 .offer_category {
     position: relative;
+    background: rgba(33, 22, 22, 0.70);
+    ;
+}
+
+.offer_category_large {
+    grid-column: 1 / -1;
+    position: relative;
+    background: rgba(33, 22, 22, 0.70);
+}
+
+.offer_img {
+    width: 100%;
+    position: inherit;
+    z-index: -1;
 }
 
 .offer_content {
@@ -126,10 +141,6 @@
     color: #F16D7F;
 }
 
-.offer_category_large {
-    grid-column: 1 / -1;
-    position: relative;
-}
 
 .main_title {
     color: #222;
@@ -155,7 +166,7 @@
 
 .shop_boxes {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, 360px);
     gap: 30px;
     padding-bottom: 48px;
 }
@@ -202,21 +213,70 @@
 }
 
 .button_browse__all {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
+    display: block;
+    border: 1px solid #FF6A6A;
+    background-color: #fff;
+    margin: 48px auto 65px auto;
+    padding: 14px 28px;
+
 }
 
-
-.button_browse__all__text {
-    color: #F26376;
+.button_browse__all__link {
+    text-decoration: none;
     font-family: Lato;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
-    text-align: center;
-    position: absolute;
+    line-height: 19px;
+    color: #F26376;
+}
+
+@media (min-width: 576px) and (max-width: 1199.98px) {
+    .center {
+        padding-left: calc(50% - 367px);
+        padding-right: calc(50% - 367px);
+    }
+
+    .title_head__img {
+        width: 368px;
+        height: 368px;
+    }
+
+    .title_head {
+        justify-content: space-between;
+    }
+
+    .title_head__text__content {
+        margin-top: 138px;
+        margin-bottom: 151px;
+        padding-right: 33px;
+    }
+
+    .title_head__text__content__text__title {
+        font-size: 44px;
+    }
+
+    .title_head__text__content__text__plain {
+        font-size: 24px;
+    }
+
+    .offer {
+        display: grid;
+        grid-template-columns: repeat(3, 231.392px);
+        grid-template-rows: 167px 117px;
+        gap: 19px;
+        padding-top: 64px;
+        padding-bottom: 109px;
+    }
+
+    .main_text {
+        padding-bottom: 73px;
+    }
+
+    .shop_boxes {
+        grid-template-columns: repeat(2, 360px);
+        gap: 16px;
+        padding-bottom: 32px;
+    }
 
 }
