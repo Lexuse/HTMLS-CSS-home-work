@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
-
 * {
     padding: 0px;
     margin: 0px;
@@ -52,6 +51,10 @@
     line-height: normal;
 }
 
+.header a:hover svg path {
+    fill: #F16D7F;
+}
+
 .title_head {
     display: flex;
     background-color: #F1E4E6;
@@ -71,7 +74,7 @@
     flex-direction: column;
 }
 
-.title_head__text__content__text__title {
+.title_head__text__content_text h1 {
     color: #222;
     font-family: Lato;
     font-size: 48px;
@@ -80,7 +83,7 @@
     line-height: normal;
 }
 
-.title_head__text__content__text__plain {
+.title_head__text__content_text p {
     color: #222;
     font-family: Lato;
     font-size: 32px;
@@ -154,7 +157,7 @@
     height: 100%;
 }
 
-.offer_text {
+.offer_content p {
     color: #FFF;
     text-align: center;
     font-family: Lato;
@@ -164,7 +167,7 @@
     line-height: normal;
 }
 
-.offer_title {
+.offer_content h3 {
     color: #F16D7F;
     font-family: Lato;
     font-size: 24px;
@@ -200,6 +203,37 @@
     grid-template-columns: repeat(auto-fit, 360px);
     gap: 30px;
     padding-bottom: 48px;
+}
+
+.shop_boxes h2 {
+    color: #000;
+    font-family: Lato;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 16px;
+}
+
+.shop_boxes p {
+    color: #5D5D5D;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding: 16px 16px;
+}
+
+.shop_boxes h3 {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 16px;
+    padding-bottom: 24px;
 }
 
 .shop_box {
@@ -247,37 +281,6 @@
     display: flex;
 }
 
-.shop_box__title {
-    color: #000;
-    font-family: Lato;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding-left: 16px;
-}
-
-.shop_box__text {
-    color: #5D5D5D;
-    font-family: Lato;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    padding: 16px 16px;
-}
-
-.shop_box__price {
-    color: #F16D7F;
-    font-family: Lato;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding-left: 16px;
-    padding-bottom: 24px;
-}
-
 .button_p {
     display: flex;
 }
@@ -292,13 +295,13 @@
     margin: 48px auto 60px auto;
     border: solid 1px #cd5364;
     transition: color 0.25s linear, background-color 0.25s linear;
+    text-decoration: none;
 }
 
-.prod__btn:hover {
+.button_p:hover a {
     color: #FFFFFF;
     background: #cd5364;
 }
-
 
 .benefit {
     background-color: #222224;
@@ -310,17 +313,12 @@
 }
 
 .benefit_card {
-
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.benefit__img {
-    padding-bottom: 20px;
-}
-
-.benefit__text__title {
+.benefit_card h3 {
     color: #FBFBFB;
     font-family: Lato;
     font-size: 19.96px;
@@ -330,7 +328,7 @@
     padding-bottom: 16px;
 }
 
-.benefit__text__plain {
+.benefit_card p {
     color: #FBFBFB;
     text-align: center;
     font-family: Lato;
@@ -338,6 +336,10 @@
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+}
+
+.benefit__img {
+    padding-bottom: 20px;
 }
 
 .subscription__blocks {
@@ -472,7 +474,6 @@
 
 .footer {
     background-color: #222224;
-
 }
 
 .footer__content {
@@ -514,30 +515,24 @@
         padding-left: calc(50% - 367px);
         padding-right: calc(50% - 367px);
     }
-
     .title_head__img {
         width: 368px;
         height: 368px;
     }
-
     .title_head {
         justify-content: space-between;
     }
-
     .title_head__text__content {
         margin-top: 138px;
         margin-bottom: 151px;
         padding-right: 33px;
     }
-
     .title_head__text__content__text__title {
         font-size: 44px;
     }
-
     .title_head__text__content__text__plain {
         font-size: 24px;
     }
-
     .offer {
         display: grid;
         grid-template-columns: repeat(3, 231.392px);
@@ -546,25 +541,21 @@
         padding-top: 64px;
         padding-bottom: 109px;
     }
-
     .offer_img__small {
         display: none;
     }
-
     .main_text {
         padding-bottom: 73px;
     }
-
     .prod__btn {
         margin: 32px auto 70px auto;
     }
-
     .shop_boxes {
         grid-template-columns: repeat(2, 360px);
         gap: 16px;
         padding-bottom: 32px;
     }
-    .benefit{
+    .benefit {
         flex-direction: column;
         padding-left: 204px;
         padding-right: 240px;
@@ -572,10 +563,8 @@
     .subscription__blocks::before {
         background-size: cover;
     }
-
     .subscription__blocks {
-        flex-direction: column;       
-
+        flex-direction: column;
     }
 }
 
@@ -584,40 +573,32 @@
         padding-left: calc(50% - 171px);
         padding-right: calc(50% - 171px);
     }
-
     .title_head__img {
         display: none;
     }
-
     .header_right__icolink__cart {
         display: none;
     }
-
     .header_right__icolink__user {
         display: none;
     }
-
     .title_head {
         justify-content: center;
     }
-
     .title_head__text__content {
         margin-top: 148px;
         margin-bottom: 148px;
     }
-
     .offer {
         grid-template-columns: repeat(1, auto);
         grid-template-rows: auto;
         gap: 32px;
         padding-bottom: 64px;
     }
-
     .offer_img {
         width: 343px;
         height: 100%;
     }
-
     .offer_img__small {
         display: block;
         width: 343px;
@@ -625,20 +606,17 @@
         position: inherit;
         z-index: -1;
     }
-
     .offer_img__large {
         display: none;
     }
-
     .shop_boxes {
         gap: 16px;
         padding-bottom: 40px;
     }
-
     .prod__btn {
         margin: 40px auto 85px;
     }
-    .benefit{
+    .benefit {
         flex-direction: column;
         padding-left: 14px;
         padding-right: 14px;
@@ -646,15 +624,15 @@
     .subscription__blocks {
         flex-direction: column;
         padding-top: 64px;
-        padding-bottom: ;
+        padding-bottom: 109px;
     }
     .subscription__blocks::before {
         background-size: cover;
     }
-    .footer__content{
+    .footer__content {
         flex-direction: column-reverse;
     }
-    .social_icons{
+    .social_icons {
         padding-bottom: 40px;
     }
 }
